@@ -368,21 +368,22 @@
     --font-family-a:'Rubik',sans-serif;
     --font-family-b:'Karla',sans-serif;
     --font-family-c:'Nanum Pen Script',sans-serif;
-    --color-a-720:rgb(135, 128, 94);
-    --color-b-650:rgb(176, 155, 113);
-    --color-c-400:rgb(216, 204, 163);
-    --color-d-200:rgb(237, 223, 179);
+    --color-a-720:rgb(57, 81, 68);
+    --color-b-650:rgb(78, 108, 80);
+    --color-c-400:rgb(170, 139, 86);
+    --color-d-200:rgb(240, 235, 206);
   }
 
   body {
-    background-color: var(--color-d-200);
+    background-color: var(--color-c-400);
   }
 
    .header {
     width: 100%;
+   }
+   .header__menu {
     background-color: var(--color-a-720);
    }
-   .header__menu {}
 
    .header__menu__wrapper {
     display: flex;
@@ -402,7 +403,7 @@
    }
    
    .header__menu__wrapper__nav__item {
-    margin-right: 1rem;
+    margin-right: 1.5rem;
    }
 
    .header__menu__nav__item__links {
@@ -410,27 +411,29 @@
     font-family: var(--font-family-a);
     font-weight: 400;
     text-decoration: none;
-    color: var(--color-c-400);
+    color: var(--color-d-200);
     transition: all 0.3s;
     display: block;
    }
 
    .header__menu__nav__item__links:hover {
     transform: scale(1.2);
-    color: rgb(204, 168, 51);
+    color: rgb(187, 183, 159);
    }
 
    .header__menu__nav__item__links__colored {
-    color: rgb(228, 157, 77);
+    color: rgb(241, 182, 114);
    }
+
    .header__menu__wrapper__logo__wrapper {
    }
+
    .header__menu__wrapper__logo {
     font-family: var(--font-family-c);
-    font-size: 2.2rem;
+    font-size: 2rem;
     text-decoration: none;
-    padding: 0.9rem;
-    color: rgb(135, 128, 94);
+    padding: 0.7rem;
+    color: var(--color-a-720);
     background-color:var(--color-d-200);
     display: block;
    }
@@ -452,3 +455,70 @@
     height: 4px;
     background-color: rgb(216, 204, 163);
    }
+
+   .header__contents {
+    background-image: url('/images/restaurant-interior.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    border-bottom: 2px solid var(--color-a-720);
+   }
+
+   .header__contents__wrapper {
+    margin: 0 auto;
+    width: 60rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .header__contents__container {
+    width: 85%;
+    height: 68%;
+    background-color: rgba(57, 81, 68, 0.945);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.692);
+   }
+   .header__contents__wrapper__title {
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color: rgb(241, 182, 114);
+    font-family: var(--font-family-c);
+   }
+   .header__contents__wrapper__text {
+    font-size: 1.9rem;
+    font-family: var(--font-family-c);
+    color: var(--color-d-200);
+    text-align: center;
+    line-height: 2.2rem;
+   }
+   .header__contents__wrapper__btn {
+    margin: 0 auto;
+    width: 10rem;
+    border-radius: 6px;
+    display: block;
+    text-align: center;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--color-a-720);
+    font-family: var(--font-family-c);
+    background-color: var(--color-d-200);
+    border: 2px solid rgb(240, 235, 206);
+    transition: all 0.4s;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.692);
+   }
+   .header__contents__wrapper__btn:hover {
+    color: rgb(240, 235, 206);
+    background-color: rgba(57, 81, 68, 0.945);
+    border: 2px solid rgb(240, 235, 206);
+   } 
