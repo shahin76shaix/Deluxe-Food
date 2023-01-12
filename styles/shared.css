@@ -364,9 +364,26 @@
     padding-right: 1rem;
   }
 
-   .header {}
+  html {
+    --font-family-a:'Rubik',sans-serif;
+    --font-family-b:'Karla',sans-serif;
+    --font-family-c:'Nanum Pen Script',sans-serif;
+    --color-a-720:rgb(135, 128, 94);
+    --color-b-650:rgb(176, 155, 113);
+    --color-c-400:rgb(216, 204, 163);
+    --color-d-200:rgb(237, 223, 179);
+  }
+
+  body {
+    background-color: var(--color-d-200);
+  }
+
+   .header {
+    width: 100%;
+    background-color: var(--color-a-720);
+   }
    .header__menu {}
-   .eader__menu__wrapper {}
+   .header__menu__wrapper {}
    .header__menu__wrapper__nav {}
    .header__menu__wrapper__nav__items {}
    .header__menu__wrapper__nav__item {}
