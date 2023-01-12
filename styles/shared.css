@@ -355,3 +355,22 @@
     padding: 0;
     box-sizing: border-box;
   }
+
+  .container {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+   .header {}
+   .header__menu {}
+   .eader__menu__wrapper {}
+   .header__menu__wrapper__nav {}
+   .header__menu__wrapper__nav__items {}
+   .header__menu__wrapper__nav__item {}
+   .header__menu__nav__item__links {}
+   .header__menu__nav__item__links__colored {}
+   .header__menu__logo__wrapper {}
+   .header__menu__logo {}
