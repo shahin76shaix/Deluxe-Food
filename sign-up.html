@@ -107,7 +107,6 @@
     <main class="main">
         <div class="container">
         <form action="/" method="GET" class="main__form">
-
                 <section class="main__form__info-a">
                     <ul class="main__form__info-a__items">
                         <li class="main__form__info-a__item">
@@ -132,9 +131,12 @@
                     </li>
                     <li class="main__form__info-a__item">
                         <label for="phone" class="main__form__info-a__item__label">Your Phone Number</label>
-                        
+                        <input type="tel" name="user-phone" id="phone" required class="main__form__info-a__item__input">
                     </li>
-                    <li class="main__form__info-a__item"></li>
+                    <li class="main__form__info-a__item">
+                        <label for="adress" class="main__form__info-a__item__label">Your Adress</label>
+                        <input type="text" name="user-adress" id="adress" placeholder="E.g Paris ave24 ..." class="main__form__info-a__item__input">
+                    </li>
                 </ul>
             </section>
             <button type="submit">Sign Up</button>
