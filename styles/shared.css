@@ -462,7 +462,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 30rem;
+    height: 35rem;
     border-bottom: 2px solid var(--color-a-720);
    }
 
@@ -687,7 +687,7 @@
    }
    .footer__menu__nav__item__link {
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-family: var(--font-family-a);
     color: var(--color-d-200);
     transition: all 0.54s;
