@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="styles/shared.css">
-    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/sign-up.css">
     <title>Deluxe Food</title>
 </head>
 <body>
@@ -108,10 +108,11 @@
         <div class="container">
         <form action="/" method="GET" class="main__form">
                 <section class="main__form__info-a">
+                    <h2 class="main__form__inf-a__title">Your Personal Information</h2>
                     <ul class="main__form__info-a__items">
                         <li class="main__form__info-a__item">
                             <label for="name" class="main__form__info-a__item__label">Your Name</label> 
-                       <input type="text" id="name" name="name" placeholder="E.g Shahin" maxlength="10" required class="main__form__info-a__item__input">
+                       <input type="text" id="name" name="name" autofocus placeholder="E.g Shahin" maxlength="10" required class="main__form__info-a__item__input">
                     </li>
                     <li class="main__form__info-a__item">
                         <label for="last-name" class="main__form__info-a__item__label">Your Last Name</label> 
@@ -124,6 +125,10 @@
                     <li class="main__form__info-a__item">
                         <label for="user-name" class="main__form__info-a__item__label">User Name</label> 
                         <input type="text" id="user-name" name="user-name" placeholder="E.g shahin__seraj" maxlength="10" required class="main__form__info-a__item__input">
+                    </li>
+                    <li class="main__form__info-a__item">
+                        <label for="pass" class="main__form__info-a__item__label">Your Password</label>
+                        <input type="password" name="password" id="pass" minlength="8" required class="main__form__info-a__item__input">
                     </li>
                     <li class="main__form__info-a__item">
                         <label for="birth-date" class="main__form__info-a__item__label">Your Birthdate</label>
@@ -139,8 +144,37 @@
                     </li>
                 </ul>
             </section>
-            <button type="submit">Sign Up</button>
-            <button type="reset">Reset</button>
+            <section class="main__form__qna-a">
+            <h2 class="main__form__qna-a__title">Where did you hear about us?</h2>              
+                <ul class="main__form__qna-a__items">
+                    <li class="main__form__qna-a__item">
+                        <input type="radio" name="qna-a" id="web" value="web-site" class="main__form__qna-a__item__radio">
+                        <label for="web" class="main__form__qna-a__item__label">Web Site</label>
+                    </li>
+                    <li class="main__form__qna-a__item">
+                        <input type="radio" name="qna-a" id="social-media" value="social-media" class="main__form__qna-a__item__radio">
+                        <label for="social-media" class="main__form__qna-a__item__label">Social Media</label>
+                    </li>
+                    <li class="main__form__qna-a__item">
+                        <input type="radio" name="qna-a" id="banners" value="banners" class="main__form__qna-a__item__radio">
+                        <label for="banners" class="main__form__qna-a__item__label">Banners</label>
+                    </li>
+                    <li class="main__form__qna-a__item">
+                        <input type="radio" name="qna-a" id="other" value="other" class="main__form__qna-a__item__radio">
+                        <label for="other" class="main__form__qna-a__item__radio">Other</label>
+                    </li>
+                </ul>
+            </section>
+            <section class="main__form__message">
+                <label for="message" class="main__form__message___label">List your favorite food</label>
+                <textarea name="message" id="message" cols="30" rows="10" class="main__form__message___textarea"></textarea>
+            </section>
+            <section class="main__form__term">
+                <input type="checkbox" name="term" id="term" class="main__form__term__checkbox">
+                <label for="term" class="main__form__term__label">Accepted Our Term</label>
+            </section>
+            <button type="submit" class="main__form__btn">Sign Up</button>
+            <button type="reset" class="main__form__btn">Reset</button>
         </form>
     </div>
     </main>
