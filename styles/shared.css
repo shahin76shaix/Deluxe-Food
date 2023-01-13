@@ -644,6 +644,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
    }
    .footer__wrapper {
     width: 100%;
