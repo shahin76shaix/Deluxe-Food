@@ -197,14 +197,22 @@ input[type=radio] {
 }
 
 @media screen and (max-width:1000px) {
-
+    .main__form {
+        width: 60% ;
+    }
 }
 @media screen and (max-width:800px) {
-
+    .main__form {
+        width: 60% ;
+    }
 }
 @media screen and (max-width:580px) {
-
+    .main__form {
+        width: 80%;
+    }
 }
 @media screen and (max-width:480px) {
-
+    .main__form {
+        width: 100%;
+    }
 }
