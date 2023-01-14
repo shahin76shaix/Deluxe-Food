@@ -1,0 +1,107 @@
+html {
+    --font-family-a:'Rubik',sans-serif;
+    --font-family-b:'Karla',sans-serif;
+    --font-family-c:'Nanum Pen Script',sans-serif;
+    --color-a-720:rgb(57, 81, 68);
+    --color-b-650:rgb(78, 108, 80);
+    --color-c-400:rgb(170, 139, 86);
+    --color-d-200:rgb(240, 235, 206);
+  }
+
+.main {
+
+}
+.main__foods {
+width: 100%;
+}
+.main__foods__title {
+    margin: 1rem auto;
+    text-align: center;
+    font-family: var(--font-family-c);
+    font-size: 2.8rem;
+    color: var(--color-a-720);
+    border-bottom: 2px solid var(--color-a-720);
+}
+.main__foods__items {
+    margin: 0;
+    margin: 1rem auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+}
+.main__foods__item {
+    display: flex;
+    flex-flow: column;
+    background-color: rgb(240, 214, 171);
+    margin: 1rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border:3px solid var(--color-a-720)
+}
+
+.main__foods__item:nth-child(7) {
+    align-self: baseline;
+    grid-column: 1/3;
+}
+
+.main__foods__item__image {
+    width: 25rem;
+    height: 14rem;
+    object-fit: cover;
+    border-bottom: 3px solid var(--color-a-720);
+}
+.main__foods__item__info {
+    padding: 1rem 0;
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main__food__item__info__title {
+    font-family: var(--font-family-c);
+    font-size: 2rem;
+    color: rgb(167, 110, 14);
+    text-transform: capitalize;
+}
+
+.main__food__item__info__text {
+    font-family: var(--font-family-a);
+    font-size: 1.2rem;
+    color: var(--color-a-720);
+    font-weight: 500;
+}
+
+.main__food__item__info__btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font-family-b);
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 0.3rem;
+    padding: 0.3rem 1.5rem;
+    color: var(--color-d-200);
+    transition: all 0.4s;
+    background-color: var(--color-a-720);
+    border: 2px solid var(--color-a-720);
+    border-radius: 3px;
+}
+
+.main__food__item__info__btn:hover {
+    background-color: rgb(240, 214, 171);
+    color: var(--color-a-720);
+    font-weight: bold;
+}
+
+@media screen and (max-width:800px) {
+    .main__foods__items {
+        display: block;
+        margin: 1rem auto;
+    }
+    .main__foods__item__image {
+        width: 100%;
+    }
+}
