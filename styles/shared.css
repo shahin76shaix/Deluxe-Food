@@ -457,7 +457,7 @@
    }
 
    .header__contents {
-    background-image: url('/images/restaurant-interior.jpg');
+    background-image: url('images/restaurant-interior.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
