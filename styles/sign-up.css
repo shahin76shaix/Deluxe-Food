@@ -36,6 +36,7 @@ html {
 }
 .main__form__info-a__item {
     margin-top: 1rem;
+    width: 90%;
 }
 .main__form__info-a__item__label {
     display: block;
@@ -43,10 +44,9 @@ html {
     font-family: var(--font-family-b);
     color: var(--color-d-200);
     font-size: 1.2rem;
-
 }
 .main__form__info-a__item__input {
-    width: 70%;
+    width: 100%;
     height: 1.8rem;
     background-color: var(--color-d-200);
     padding: 1rem;
@@ -65,47 +65,135 @@ html {
 }
 
 .main__form__qna-a {
-
 }
 .main__form__qna-a__title {
-
+    margin-top: 1rem;
+    font-family: var(--font-family-a);
+    color: rgb(235, 188, 108);
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 .main__form__qna-a__items {
     margin: 0;
     padding: 0;
     list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .main__form__qna-a__item {
-
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main__form__qna-a__item:hover {
+    border-bottom: 2px solid var(--color-d-200);
 }
 .main__form__qna-a__item__label {
+    font-size: 1.1rem;
+    padding-left: 0.3rem;
+    color: var(--color-d-200);
+    font-family: var(--font-family-b);
 
 }
 .main__form__qna-a__item__radio {
-
+    
 }
-.main__form__term {
-
-}
-.main__form__term__label {
-
+input[type=radio] {
+    border: 0px;
+    width: 1rem;
+    height: 1rem;
+    color: var(--color-d-200);
 }
 
 .main__form__message {
     
 }
+
+.main__f0rm__message__title {
+    margin-top: 1rem;
+    font-family: var(--font-family-a);
+    color: rgb(235, 188, 108);
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+
 .main__form__message___label {
-    
+    display: block;
+    display: block;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-family-b);
+    color: var(--color-d-200);
+    font-size: 1.2rem;
+    margin-top: 1rem;
 }
 .main__form__message___textarea {
-    
+    width: 100%;
+    background-color: var(--color-d-200);
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    font-family: var(--font-family-a);
+    font-size: 1.1rem;
+    color:rgba(0,0,0,0.8);
+    resize: vertical;
+    margin-top: 0.5rem;
+}
+
+.main__form__message___textarea:focus {
+    border: 3px solid rgb(128, 107, 72);
+    background-color: #ffff;
+}
+
+.main__form__term {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+.main__form__term__label {
+    display: block;
+    font-family: var(--font-family-b);
+    color: var(--color-d-200);
+    font-size: 1.2rem;
+    margin-left: 0.3rem;
 }
 
 .main__form__term__checkbox {
 
 }
-.main__form__btn {
 
+.main__form__btns{
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem;
+}
+
+.main__form__btn {
+    padding: 0.5rem 1.8rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 3px;
+    border: none;
+    font-family: var(--font-family-c);
+    font-size: 1.5rem;
+    color: var(--color-a-720);
+    background-color: var(--color-d-200);
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+    transition: 0.4s;
+}
+
+.main__form__btn:hover {
+    background-color: var(--color-a-720);
+    color: var(--color-d-200);
+}
+
+.main__form__btn:nth-child(2) {
+    background-color: rgb(236, 38, 38);
+    color: white;
 }
 
 @media screen and (max-width:1000px) {
